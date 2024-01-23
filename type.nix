@@ -107,7 +107,7 @@
   type = types.submodule ({config, ...}: {
     options =
       {
-        enable = lib.mkEnableOption "Arkenfox settings";
+        enable = lib.mkEnableOption "Betterfox settings";
         flatSettings = lib.mkOption {
           description = "Flat attrset of all settings enabled";
           type = types.attrsOf types.anything;

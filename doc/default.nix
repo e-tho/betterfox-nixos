@@ -94,8 +94,8 @@
 
   upstream =
     if version == "master"
-    then "https://github.com/arkenfox/user.js"
-    else "https://github.com/arkenfox/user.js/tree/${version}";
+    then "https://github.com/yokoffing/Betterfox/"
+    else "https://github.com/yokoffing/Betterfox/tree/${version}";
 in
   writeTextFile {
     name = "arkenfox-user.js-doc.html";
@@ -114,7 +114,7 @@ in
       }</h1>
 
       <p>Documentation built by
-      <a href="https://github.com/dwarfmaster/arkenfox-nixos">DwarfMaster</a>.</p>
+      <a href="https://github.com/e-tho/betterfox-nixos">Etho</a>.</p>
 
       ${mapAttrsToString buildSection extracted}
       </div></body>

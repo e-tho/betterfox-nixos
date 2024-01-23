@@ -1,5 +1,5 @@
 {
-  description = "Utilities to use arkenfox's user.js for Firefox";
+  description = "Utilities to use betterfox's user.js for Firefox";
 
   inputs = {
     nixpkgs.url = "nixpkgs/release-23.05";
@@ -24,22 +24,22 @@
     docs = pkgs:
       (mapAttrs'
         (version: extracted:
-          nameValuePair "arkenfox-v${ppVer version}-doc-static"
+          nameValuePair "betterfox-v${ppVer version}-doc-static"
           (pkgs.callPackage ./doc {inherit extracted version;}))
-        self.lib.arkenfox.extracted)
+        self.lib.betterfox.extracted)
       // (mapAttrs'
         (version: extracted:
-          nameValuePair "arkenfox-v${ppVer version}-doc"
+          nameValuePair "betterfox-v${ppVer version}-doc"
           (pkgs.callPackage ./doc {
             inherit extracted version;
             css = "/style.css";
           }))
-        self.lib.arkenfox.extracted);
+        self.lib.betterfox.extracted);
 
     outputs = flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages."${system}";
       extractor = pkgs.callPackage ./extractor {};
-      generator = pkgs.callPackage ./generator {arkenfox-extractor = extractor;};
+      generator = pkgs.callPackage ./generator {betterfox-extractor = extractor;};
     in {
       checks.pre-commit-check = pre-commit.lib."${system}".run {
         src = ./.;
@@ -62,9 +62,9 @@
 
       packages =
         {
-          arkenfox-extractor = extractor;
-          arkenfox-generator = generator;
-          arkenfox-doc-css = pkgs.writeText "style.css" (builtins.readFile ./doc/style.css);
+          betterfox-extractor = extractor;
+          betterfox-generator = generator;
+          betterfox-doc-css = pkgs.writeText "style.css" (builtins.readFile ./doc/style.css);
           default = extractor;
         }
         // (docs pkgs);
@@ -73,26 +73,26 @@
     outputs
     // {
       overlays = {
-        arkenfox = _: prev: (let
+        betterfox = _: prev: (let
           extractor = prev.callPackage ./extractor {};
         in
           {
-            arkenfox-extractor = prev.callPackage ./extractor {};
-            arkenfox-generator = prev.callPackage ./generator {arkenfox-extractor = extractor;};
-            arkenfox-doc-css = prev.writeText "style.css" (builtins.readFile ./doc/style.css);
+            betterfox-extractor = prev.callPackage ./extractor {};
+            betterfox-generator = prev.callPackage ./generator {betterfox-extractor = extractor;};
+            betterfox-doc-css = prev.writeText "style.css" (builtins.readFile ./doc/style.css);
           }
           // (docs prev));
-        default = self.overlays.arkenfox;
+        default = self.overlays.betterfox;
       };
 
-      lib.arkenfox = {
-        supportedVersions = builtins.attrNames self.lib.arkenfox.extracted;
+      lib.betterfox = {
+        supportedVersions = builtins.attrNames self.lib.betterfox.extracted;
         extracted = import ./autogen;
       };
 
       hmModules = {
-        arkenfox = import ./hm.nix self.lib.arkenfox.supportedVersions self.lib.arkenfox.extracted;
-        default = self.hmModules.arkenfox;
+        betterfox = import ./hm.nix self.lib.betterfox.supportedVersions self.lib.betterfox.extracted;
+        default = self.hmModules.betterfox;
       };
     };
 }

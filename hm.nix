@@ -7,37 +7,37 @@ versions: extracted: {
 
   cfg = config.programs.firefox;
   version = "${config.programs.firefox.package.version}";
-  ext = extracted."${cfg.arkenfox.version}";
+  ext = extracted."${cfg.betterfox.version}";
 in {
   options.programs.firefox = {
-    arkenfox = {
-      enable = lib.mkEnableOption "arkenfox support in profiles";
+    betterfox = {
+      enable = lib.mkEnableOption "betterfox support in profiles";
       version = lib.mkOption {
-        description = "The version of arkenfox user.js used";
+        description = "The version of betterfox user.js used";
         type = types.enum versions;
         default = "master";
       };
     };
     profiles = lib.mkOption {
       type = types.attrsOf (types.submodule ({config, ...}: {
-        options.arkenfox = lib.mkOption {
-          description = "Setup arkenfox user.js in profile";
+        options.betterfox = lib.mkOption {
+          description = "Setup betterfox user.js in profile";
           type = import ./type.nix {
             extracted = ext;
             inherit lib;
           };
           default = {};
         };
-        config = lib.mkIf cfg.arkenfox.enable {
-          settings = config.arkenfox.flatSettings;
+        config = lib.mkIf cfg.betterfox.enable {
+          settings = config.betterfox.flatSettings;
         };
       }));
     };
   };
 
-  config = lib.mkIf (cfg.enable && cfg.arkenfox.enable && !(lib.hasPrefix cfg.arkenfox.version version)) {
+  config = lib.mkIf (cfg.enable && cfg.betterfox.enable && !(lib.hasPrefix cfg.betterfox.version version)) {
     warnings = [
-      "Arkenfox version ${cfg.arkenfox.version} does not match Firefox's (${version})"
+      "Betterfox version ${cfg.betterfox.version} does not match Firefox's (${version})"
     ];
   };
 }
