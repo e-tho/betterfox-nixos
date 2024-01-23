@@ -1,10 +1,6 @@
-{
-  writeScriptBin,
-  perl,
-  ...
-}:
-writeScriptBin "arkenfox-extractor" ''
-  #!${perl}/bin/perl
+{ writeScriptBin, python3, ... }:
+writeScriptBin "betterfox-extractor" ''
+  #!${python3}/bin/python
 
-  ${builtins.readFile ./extractor.pl}
+  ${builtins.readFile ./betterfox-extractor.py}
 ''
