@@ -47,11 +47,11 @@
           alejandra.enable = true;
           deadnix.enable = true;
           statix.enable = true;
-          perltidy = {
+          black = {
             enable = true;
-            name = "Tidy perl code";
-            types = ["perl"];
-            entry = "${pkgs.perl.passthru.pkgs.PerlTidy}/bin/perltidy -b";
+            name = "Format Python code with black";
+            types = ["python"];
+            entry = "${pkgs.python3Packages.black}/bin/black";
           };
         };
         settings = {

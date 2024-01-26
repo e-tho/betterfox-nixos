@@ -106,7 +106,7 @@ in
         <link rel="stylesheet" href="${css}">
       </head>
       <body><div id="page">
-      <h1>Arkenfox <a href="${upstream}">user.js</a>
+      <h1>Betterfox <a href="${upstream}">user.js</a>
           for Firefox ${
         if version == "master"
         then ""
