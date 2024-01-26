@@ -1,16 +1,34 @@
 import requests
 import subprocess
 import re
+import os
 
 def generate_version(default_file, version):
     print(f"Generating v{version}")
-    # Update the URL to point to the Betterfox repository
-    script = f"curl -s https://raw.githubusercontent.com/yokoffing/Betterfox/{version}/user.js > {version}.js"
-    subprocess.run(script, shell=True)
-    # Add processing logic here if necessary
-    default_file.write(
-        f'  "{version}" = builtins.readFile ./{version}.js;\n'
-    )
+
+    url = f"https://raw.githubusercontent.com/yokoffing/Betterfox/{version}/user.js"
+    response = requests.get(url)
+    if response.status_code == 200:
+        user_js_content = response.text
+
+        # Writing the content to a temporary user.js file
+        with open("temp_user.js", "w") as file:
+            file.write(user_js_content)
+
+        # Running the betterfox-extractor script on the user.js file
+        extractor_command = f"betterfox-extractor temp_user.js > {version}.json"
+        subprocess.run(extractor_command, shell=True)
+
+        # Writing the Nix expression to the default file
+        default_file.write(
+            f'  "{version}" = builtins.readFile ./{version}.json;\n'
+        )
+
+        # Remove the temporary file
+        os.remove("temp_user.js")
+    else:
+        print(f"Failed to download {url}")
+
 
 def main():
     # Fetch tags from the Betterfox GitHub repository
@@ -28,7 +46,8 @@ def main():
                 generate_version(default_file, version)
 
         default_file.write("}\n")
-        print(f"Default file: {default_file}") 
+        print(f"Default file: {default_file}")
+
 
 if __name__ == "__main__":
     main()
