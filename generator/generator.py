@@ -31,23 +31,26 @@ def generate_version(default_file, version):
 
 
 def main():
-    # Fetch tags from the Betterfox GitHub repository
-    response = requests.get("https://api.github.com/repos/yokoffing/Betterfox/tags")
-    tags = response.json()
-
+    # Start writing to default.nix
     with open("default.nix", "w") as default_file:
         default_file.write("{\n")
 
-        # Process each tag
+        # Manually process the master version
+        generate_version(default_file, "master")
+
+        # Fetch tags from the Betterfox GitHub repository
+        response = requests.get("https://api.github.com/repos/yokoffing/Betterfox/tags")
+        tags = response.json()
+
+        # Process each tag/version
         for tag in tags:
             version = tag["name"]
             # Check if the version matches the required format (e.g., "119.0", "118.0", etc.)
             if re.match(r"^\d+\.\d+$", version):
                 generate_version(default_file, version)
 
+        # End of the default.nix file
         default_file.write("}\n")
-        print(f"Default file: {default_file}")
-
 
 if __name__ == "__main__":
     main()

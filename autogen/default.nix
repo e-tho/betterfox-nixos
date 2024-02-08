@@ -1,4 +1,5 @@
 {
+  "master" = builtins.readFile ./master.json;
   "119.0" = builtins.readFile ./119.0.json;
   "118.0" = builtins.readFile ./118.0.json;
   "117.0" = builtins.readFile ./117.0.json;
