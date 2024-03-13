@@ -227,7 +227,7 @@
         "links": {}
       }
     },
-    "ocsp-&-certs-/-hpkp": {
+    "ocsp-and-certs-with-hpkp": {
       "settings": [
         {
           "name": "security.OCSP.enabled",
@@ -256,7 +256,7 @@
         "links": {}
       }
     },
-    "ssl-/-tls": {
+    "ssl-with-tls": {
       "settings": [
         {
           "name": "security.ssl.treat_unsafe_negotiation_as_broken",
@@ -304,7 +304,7 @@
         "links": {}
       }
     },
-    "shutdown-&-sanitizing": {
+    "shutdown-and-sanitizing": {
       "settings": [
         {
           "name": "privacy.history.custom",
@@ -362,7 +362,7 @@
         "links": {}
       }
     },
-    "search-/-url-bar": {
+    "search-with-url-bar": {
       "settings": [
         {
           "name": "browser.search.separatePrivateDefault.ui.enabled",
@@ -425,7 +425,7 @@
         "links": {}
       }
     },
-    "proxy-/-socks-/-ipv6": {
+    "proxy-with-socks-with-ipv6": {
       "settings": [
         {
           "name": "network.proxy.socks_remote_dns",
@@ -488,7 +488,7 @@
         "links": {}
       }
     },
-    "address-+-credit-card-manager": {
+    "address-plus-credit-card-manager": {
       "settings": [
         {
           "name": "extensions.formautofill.addresses.enabled",
@@ -517,7 +517,7 @@
         "links": {}
       }
     },
-    "mixed-content-+-cross-site": {
+    "mixed-content-plus-cross-site": {
       "settings": [
         {
           "name": "network.auth.subresource-http-auth-allow",
@@ -546,7 +546,7 @@
         "links": {}
       }
     },
-    "headers-/-referers": {
+    "headers-with-referers": {
       "settings": [
         {
           "name": "network.http.referer.XOriginTrimmingPolicy",
@@ -994,7 +994,7 @@
         "links": {}
       }
     },
-    "*-pocket": {
+    "--pocket": {
       "settings": [
         {
           "name": "extensions.pocket.enabled",

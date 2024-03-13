@@ -14,7 +14,16 @@ current_subsection = None
 
 # Fonction pour formater les noms
 def format_name(name):
-    return name.lower().replace(" ", "-")
+    # Convertit tous les caractères en minuscules et remplace les espaces par des tirets
+    name = name.lower().replace(" ", "-")
+    # Remplace d'autres caractères spécifiques par des chaînes plus parlantes
+    name = name.replace("/", "with").replace("&", "and").replace("+", "plus")
+    # Remplace les caractères restants non alphanumériques par des tirets
+    name = re.sub(r"[^a-z0-9-]", "-", name)
+    # Assurez-vous que le nom ne commence pas par un chiffre
+    if name and name[0].isdigit():
+        name = "_" + name
+    return name
 
 
 # Fonction pour nettoyer les chaînes pour Nix
