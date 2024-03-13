@@ -1,1026 +1,1017 @@
 {
   "fastfox": {
+    "meta": {},
+    "settings": [],
     "general": {
+      "meta": {
+        "title": "general",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "content.notify.interval",
           "enabled": true,
-          "value": "100000"
+          "value": 100000
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "gfx": {
+      "meta": {
+        "title": "gfx",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "gfx.canvas.accelerated.cache-items",
           "enabled": true,
-          "value": "4096"
+          "value": 4096
         },
         {
           "name": "gfx.canvas.accelerated.cache-size",
           "enabled": true,
-          "value": "512"
+          "value": 512
         },
         {
           "name": "gfx.content.skia-font-cache-size",
           "enabled": true,
-          "value": "20"
+          "value": 20
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "disk-cache": {
+      "meta": {
+        "title": "disk-cache",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.cache.jsbc_compression_level",
           "enabled": true,
-          "value": "3"
+          "value": 3
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "media-cache": {
+      "meta": {
+        "title": "media-cache",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "media.memory_cache_max_size",
           "enabled": true,
-          "value": "65536"
+          "value": 65536
         },
         {
           "name": "media.cache_readahead_limit",
           "enabled": true,
-          "value": "7200"
+          "value": 7200
         },
         {
           "name": "media.cache_resume_threshold",
           "enabled": true,
-          "value": "3600"
+          "value": 3600
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "image-cache": {
+      "meta": {
+        "title": "image-cache",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "image.mem.decode_bytes_at_a_time",
           "enabled": true,
-          "value": "32768"
+          "value": 32768
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "network": {
+      "meta": {
+        "title": "network",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "network.buffer.cache.size",
           "enabled": true,
-          "value": "262144"
+          "value": 262144
         },
         {
           "name": "network.buffer.cache.count",
           "enabled": true,
-          "value": "128"
+          "value": 128
         },
         {
           "name": "network.http.max-connections",
           "enabled": true,
-          "value": "1800"
+          "value": 1800
         },
         {
           "name": "network.http.max-persistent-connections-per-server",
           "enabled": true,
-          "value": "10"
+          "value": 10
         },
         {
           "name": "network.http.max-urgent-start-excessive-connections-per-host",
           "enabled": true,
-          "value": "5"
+          "value": 5
         },
         {
           "name": "network.http.pacing.requests.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "network.dnsCacheExpiration",
           "enabled": true,
-          "value": "3600"
+          "value": 3600
         },
         {
           "name": "network.dns.max_high_priority_threads",
           "enabled": true,
-          "value": "8"
+          "value": 8
         },
         {
           "name": "network.ssl_tokens_cache_capacity",
           "enabled": true,
-          "value": "10240"
+          "value": 10240
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "speculative-loading": {
+      "meta": {
+        "title": "speculative-loading",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "network.dns.disablePrefetch",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "network.prefetch-next",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "network.predictor.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "experimental": {
+      "meta": {
+        "title": "experimental",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "layout.css.grid-template-masonry-value.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "dom.enable_web_task_scheduling",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "layout.css.has-selector.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "dom.security.sanitizer.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
-    },
-    "meta": {
-      "title": "fastfox",
-      "description": "",
-      "links": {},
-      "parrots": []
+      ]
     }
   },
   "securefox": {
+    "meta": {},
+    "settings": [],
     "tracking-protection": {
+      "meta": {
+        "title": "tracking-protection",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.contentblocking.category",
           "enabled": true,
-          "value": "\\\"strict\\\""
+          "value": "strict"
         },
         {
           "name": "urlclassifier.trackingSkipURLs",
           "enabled": true,
-          "value": "\\\"*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com\\\""
+          "value": "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com"
         },
         {
           "name": "urlclassifier.features.socialtracking.skipURLs",
           "enabled": true,
-          "value": "\\\"*.instagram.com, *.twitter.com, *.twimg.com\\\""
+          "value": "*.instagram.com, *.twitter.com, *.twimg.com"
         },
         {
           "name": "network.cookie.sameSite.noneRequiresSecure",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.download.start_downloads_in_tmp_dir",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.helperApps.deleteTempFileOnExit",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.uitour.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "privacy.globalprivacycontrol.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "ocsp-and-certs-with-hpkp": {
+      "meta": {
+        "title": "ocsp-and-certs-with-hpkp",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "security.OCSP.enabled",
           "enabled": true,
-          "value": "0"
+          "value": 0
         },
         {
           "name": "security.remote_settings.crlite_filters.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "security.pki.crlite_mode",
           "enabled": true,
-          "value": "2"
+          "value": 2
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "ssl-with-tls": {
+      "meta": {
+        "title": "ssl-with-tls",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "security.ssl.treat_unsafe_negotiation_as_broken",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.xul.error_pages.expert_bad_cert",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "security.tls.enable_0rtt_data",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "disk-avoidance": {
+      "meta": {
+        "title": "disk-avoidance",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.privatebrowsing.forceMediaMemoryCache",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.sessionstore.interval",
           "enabled": true,
-          "value": "60000"
+          "value": 60000
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "shutdown-and-sanitizing": {
+      "meta": {
+        "title": "shutdown-and-sanitizing",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "privacy.history.custom",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "search-with-url-bar": {
+      "meta": {
+        "title": "search-with-url-bar",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.search.separatePrivateDefault.ui.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.urlbar.update2.engineAliasRefresh",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.search.suggest.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.urlbar.suggest.quicksuggest.sponsored",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.urlbar.suggest.quicksuggest.nonsponsored",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.formfill.enable",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "security.insecure_connection_text.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "security.insecure_connection_text.pbmode.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "network.IDN_show_punycode",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "https-first-policy": {
+      "meta": {
+        "title": "https-first-policy",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "dom.security.https_first",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "dom.security.https_first_schemeless",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "passwords": {
+      "meta": {
+        "title": "passwords",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "signon.formlessCapture.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "signon.privateBrowsingCapture.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "network.auth.subresource-http-auth-allow",
           "enabled": true,
-          "value": "1"
+          "value": 1
         },
         {
           "name": "editor.truncate_user_pastes",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "mixed-content-plus-cross-site": {
+      "meta": {
+        "title": "mixed-content-plus-cross-site",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "security.mixed_content.block_display_content",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "security.mixed_content.upgrade_display_content",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "security.mixed_content.upgrade_display_content.image",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "pdfjs.enableScripting",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "extensions.postDownloadThirdPartyPrompt",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "headers-with-referers": {
+      "meta": {
+        "title": "headers-with-referers",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "network.http.referer.XOriginTrimmingPolicy",
           "enabled": true,
-          "value": "2"
+          "value": 2
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "containers": {
+      "meta": {
+        "title": "containers",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "privacy.userContext.ui.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "webrtc": {
+      "meta": {
+        "title": "webrtc",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "media.peerconnection.ice.proxy_only_if_behind_proxy",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "media.peerconnection.ice.default_address_only",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "safe-browsing": {
+      "meta": {
+        "title": "safe-browsing",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.safebrowsing.downloads.remote.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "mozilla": {
+      "meta": {
+        "title": "mozilla",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "permissions.default.desktop-notification",
           "enabled": true,
-          "value": "2"
+          "value": 2
         },
         {
           "name": "permissions.default.geo",
           "enabled": true,
-          "value": "2"
+          "value": 2
         },
         {
           "name": "geo.provider.network.url",
           "enabled": true,
-          "value": "\\\"https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%\\\""
+          "value": "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%"
         },
         {
           "name": "permissions.manager.defaultsUrl",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         },
         {
           "name": "webchannel.allowObject.urlWhitelist",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "telemetry": {
+      "meta": {
+        "title": "telemetry",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "datareporting.policy.dataSubmissionEnabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "datareporting.healthreport.uploadEnabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.unified",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.server",
           "enabled": true,
-          "value": "\\\"data:,\\\""
+          "value": "data:,"
         },
         {
           "name": "toolkit.telemetry.archive.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.newProfilePing.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.shutdownPingSender.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.updatePing.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.bhrPing.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.firstShutdownPing.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "toolkit.telemetry.coverage.opt-out",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "toolkit.coverage.opt-out",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "toolkit.coverage.endpoint.base",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         },
         {
           "name": "browser.ping-centre.telemetry",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.newtabpage.activity-stream.feeds.telemetry",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.newtabpage.activity-stream.telemetry",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "experiments": {
+      "meta": {
+        "title": "experiments",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "app.shield.optoutstudies.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "app.normandy.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "app.normandy.api_url",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "crash-reports": {
+      "meta": {
+        "title": "crash-reports",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "breakpad.reportURL",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         },
         {
           "name": "browser.tabs.crashReporting.sendReport",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.crashReports.unsubmittedCheck.autoSubmit2",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "detection": {
+      "meta": {
+        "title": "detection",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "captivedetect.canonicalURL",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         },
         {
           "name": "network.captive-portal-service.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "network.connectivity-service.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
-    },
-    "meta": {
-      "title": "securefox",
-      "description": "",
-      "links": {},
-      "parrots": []
+      ]
     }
   },
   "peskyfox": {
+    "meta": {},
+    "settings": [],
     "mozilla-ui": {
+      "meta": {
+        "title": "mozilla-ui",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.privatebrowsing.vpnpromourl",
           "enabled": true,
-          "value": "\\\"\\\""
+          "value": ""
         },
         {
           "name": "extensions.getAddons.showPane",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "extensions.htmlaboutaddons.recommendations.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.discovery.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.shell.checkDefaultBrowser",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.preferences.moreFromMozilla",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.tabs.tabmanager.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.aboutConfig.showWarning",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.aboutwelcome.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "theme-adjustments": {
+      "meta": {
+        "title": "theme-adjustments",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "toolkit.legacyUserProfileCustomizations.stylesheets",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.compactmode.show",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.display.focus_ring_on_anything",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.display.focus_ring_style",
           "enabled": true,
-          "value": "0"
+          "value": 0
         },
         {
           "name": "browser.display.focus_ring_width",
           "enabled": true,
-          "value": "0"
+          "value": 0
         },
         {
           "name": "layout.css.prefers-color-scheme.content-override",
           "enabled": true,
-          "value": "2"
+          "value": 2
         },
         {
           "name": "browser.privateWindowSeparation.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "cookie-banner-handling": {
+      "meta": {
+        "title": "cookie-banner-handling",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "cookiebanners.service.mode",
           "enabled": true,
-          "value": "1"
+          "value": 1
         },
         {
           "name": "cookiebanners.service.mode.privateBrowsing",
           "enabled": true,
-          "value": "1"
+          "value": 1
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "fullscreen-notice": {
+      "meta": {
+        "title": "fullscreen-notice",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "full-screen-api.transition-duration.enter",
           "enabled": true,
-          "value": "\\\"0 0\\\""
+          "value": "0 0"
         },
         {
           "name": "full-screen-api.transition-duration.leave",
           "enabled": true,
-          "value": "\\\"0 0\\\""
+          "value": "0 0"
         },
         {
           "name": "full-screen-api.warning.delay",
           "enabled": true,
-          "value": "-1"
+          "value": -1
         },
         {
           "name": "full-screen-api.warning.timeout",
           "enabled": true,
-          "value": "0"
+          "value": 0
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "url-bar": {
+      "meta": {
+        "title": "url-bar",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.urlbar.suggest.calculator",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.urlbar.unitConversion.enabled",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.urlbar.trending.featureGate",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "new-tab-page": {
+      "meta": {
+        "title": "new-tab-page",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.newtabpage.activity-stream.feeds.topsites",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.newtabpage.activity-stream.feeds.section.topstories",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "pocket": {
+      "meta": {
+        "title": "pocket",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "extensions.pocket.enabled",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "downloads": {
+      "meta": {
+        "title": "downloads",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.download.always_ask_before_handling_new_types",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "browser.download.manager.addToRecentDocs",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "pdf": {
+      "meta": {
+        "title": "pdf",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.download.open_pdf_attachments_inline",
           "enabled": true,
-          "value": "true"
+          "value": true
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
+      ]
     },
     "tab-behavior": {
+      "meta": {
+        "title": "tab-behavior",
+        "description": "",
+        "links": {}
+      },
       "settings": [
         {
           "name": "browser.bookmarks.openInTabClosesMenu",
           "enabled": true,
-          "value": "false"
+          "value": false
         },
         {
           "name": "browser.menu.showViewImageInfo",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "findbar.highlightAll",
           "enabled": true,
-          "value": "true"
+          "value": true
         },
         {
           "name": "layout.word_select.eat_space_to_next_word",
           "enabled": true,
-          "value": "false"
+          "value": false
         }
-      ],
-      "meta": {
-        "title": "default",
-        "description": "",
-        "links": {}
-      }
-    },
-    "meta": {
-      "title": "peskyfox",
-      "description": "",
-      "links": {},
-      "parrots": []
+      ]
     }
   },
-  "smoothfox": {}
+  "smoothfox": {
+    "meta": {},
+    "settings": []
+  }
 }
