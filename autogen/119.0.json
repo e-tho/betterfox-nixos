@@ -1,5 +1,13 @@
 {
   "fastfox": {
+    "meta": {
+      "title": "fastfox",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "general": {
       "meta": {
         "title": "general",
@@ -199,6 +207,14 @@
     }
   },
   "securefox": {
+    "meta": {
+      "title": "securefox",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "tracking-protection": {
       "meta": {
         "title": "tracking-protection",
@@ -752,6 +768,14 @@
     }
   },
   "peskyfox": {
+    "meta": {
+      "title": "peskyfox",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "mozilla-ui": {
       "meta": {
         "title": "mozilla-ui",
@@ -1035,6 +1059,16 @@
           "enabled": true,
           "value": "false"
         }
+      ]
+    }
+  },
+  "smoothfox": {
+    "meta": {
+      "title": "smoothfox",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
       ]
     }
   }
