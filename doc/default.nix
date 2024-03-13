@@ -98,7 +98,7 @@
     else "https://github.com/yokoffing/Betterfox/tree/${version}";
 in
   writeTextFile {
-    name = "arkenfox-user.js-doc.html";
+    name = "betterfox-user.js-doc.html";
     text = ''
       <!DOCTYPE html>
       <html>
