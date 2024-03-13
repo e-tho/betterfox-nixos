@@ -18,11 +18,20 @@ def start_new_section(name):
     global current_section, current_subsection
     current_section = format_name(name)
     current_subsection = None  # Reset subsection when starting a new section
+    if current_section not in sections:
+        sections[current_section] = {
+            "meta": {
+                "title": current_section,
+                "description": "",
+                "links": {},
+                "parrots": [""],
+            }
+        }
 
 
 def start_new_subsection(name):
     global current_subsection
-    if name is None:  # For default subsection
+    if name is None:  # For default subsection if there's no named subsection
         name = "default"
     formatted_name = format_name(name)
     current_subsection = {
@@ -37,7 +46,6 @@ def start_new_subsection(name):
 with open("temp_user.js", "r") as file:
     for line in file:
         line = line.strip()
-        # print(f"COUCOU: {section_pattern.search(line)}")
 
         if section_match := section_pattern.search(line):
             start_new_section(section_match.group(1).strip())
@@ -56,4 +64,4 @@ with open("temp_user.js", "r") as file:
             continue
 
 json_output = json.dumps(sections, indent=2)
-print(f"{json_output}")
+print(json_output)
