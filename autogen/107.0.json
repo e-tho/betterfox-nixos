@@ -1,7 +1,13 @@
 {
   "securefox": {
-    "meta": {},
-    "settings": [],
+    "meta": {
+      "title": "SECUREFOX",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "tracking-protection": {
       "meta": {
         "title": "tracking-protection",
@@ -728,8 +734,14 @@
     }
   },
   "peskyfox": {
-    "meta": {},
-    "settings": [],
+    "meta": {
+      "title": "PESKYFOX",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "mozilla-ui": {
       "meta": {
         "title": "mozilla-ui",
@@ -1004,8 +1016,14 @@
     }
   },
   "fastfox": {
-    "meta": {},
-    "settings": [],
+    "meta": {
+      "title": "FASTFOX",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    },
     "default": {
       "meta": {
         "title": "default",
@@ -1198,7 +1216,13 @@
     }
   },
   "smoothfox": {
-    "meta": {},
-    "settings": []
+    "meta": {
+      "title": "SMOOTHFOX",
+      "description": "",
+      "links": {},
+      "parrots": [
+        ""
+      ]
+    }
   }
 }
